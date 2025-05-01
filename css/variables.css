@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500&family=Manrope:wght@300;400;500;600&display=swap");
+/* Подключение шрифтов через @import */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500&family=Manrope:wght@300;400;500;600&display=swap");
+/* Переменные для шрифтов */
+:root {
+  /* Семейства шрифтов */
+  --font-family-arial: "Arial", Helvetica, sans-serif;
+  --font-family-manrope: "Manrope", sans-serif;
+  --font-family-verdana: "Verdana", Helvetica, sans-serif;
+  --font-family-inter: "Inter", sans-serif;
+  /* Arial */
+  --font-weight-arial-regular: 400;
+  --font-weight-arial-bold: 700;
+  /*Manrope */
+  --font-weight-manrope-light: 300;
+  --font-weight-manrope-regular: 400;
+  --font-weight-manrope-medium: 500;
+  --font-weight-manrope-semibold: 600;
+  /* Inter */
+  --font-weight-inter-regular: 400;
+  --font-weight-inter-medium: 500;
+  /* Verdana */
+  --font-weight-verdana-regular: 400;
+  --font-weight-verdana-bold: 700;
+  /* Параметры текста */
+  --body-text-font-family: var(--font-family-inter);
+  --body-text-font-weight: var(--font-weight-inter-medium);
+  --body-text-font-size: 20px;
+  --body-text-letter-spacing: 0px;
+  --body-text-line-height: 150%;
+  --body-text-font-style: normal;
+  --small-text-font-family: var(--font-family-inter);
+  --small-text-font-weight: var(--font-weight-inter-medium);
+  --small-text-font-size: 16px;
+  --small-text-letter-spacing: 0px;
+  --small-text-line-height: 150%;
+  --small-text-font-style: normal;
+  --subheading-font-family: var(--font-family-inter);
+  --subheading-font-weight: var(--font-weight-inter-regular);
+  --subheading-font-size: 24px;
+  --subheading-letter-spacing: 0px;
+  --subheading-line-height: 150%;
+  --subheading-font-style: normal;
+  --button-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
