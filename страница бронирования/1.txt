@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page4style.css" />
+    <title>Dream Path – Поиск туров</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      
+        <div class="navigation-header">
+          <div class="logo-header">
+            <img src="page4 img/логотип.svg" alt="Dream Path Logo" class="logo-icon">
+            <div class="site-name">Dream Path</div>
+          </div>
+         
+          <div class="desktop-menu">
+            <div class="header-text-items">Туры</div>
+            <div class="header-text-items">Бронирование</div>
+            <div class="header-text-items"><a href="/страница контактов/page3.html">Контакты</a></div>
+            <button class="button">
+              <div class="login-text">Войти</div>
+            </button>
+          </div>
+  
+         
+          <div class="mobile-header">
+           
+            <div class="mobile-hamburger-container">
+              <div class="hamburger" onclick="toggleMenu()">☰</div>
+              
+              <div class="mobile-menu" id="mobileMenu">
+                <div class="header-text-items">Туры</div>
+                <div class="header-text-items">Бронирование</div>
+                <div class="header-text-items"><a href="готовый вариант\страница контактов\page3.html">Контакты</a></div>
+              </div>
+            </div>
+            <button class="button mobile-login">
+              <div class="login-text">Войти</div>
+            </button>
+          </div>
+  
+        </div>
+    
+    </header>
+
+    <!-- Main Content: две колонки -->
+    <main class="container">
+      <!-- Форма фильтров (левая колонка) -->
+      <aside id="filter-panel">
+        <h2>Фильтры</h2>
+        <form id="filter-form">
+          <!-- Питание и услуги -->
+          <fieldset class="filter-group">
+            <legend>Питание и услуги</legend>
+            <div class="filter-options">
+              <label><input type="checkbox" name="nutrition" value="all_inclusive"> Всё включено</label>
+              <label><input type="checkbox" name="nutrition" value="breakfast_dinner"> Завтрак и ужин</label>
+              <label><input type="checkbox" name="nutrition" value="breakfast_only"> Только завтраки</label>
+              <label><input type="checkbox" name="nutrition" value="no_meal"> Без питания</label>
+              <label><input type="checkbox" name="nutrition" value="full_board"> Завтрак, обед и ужин</label>
+              <label><input type="checkbox" name="nutrition" value="any" checked> Любое</label>
+              <label><input type="checkbox" name="nutrition" value="ultra_all_inclusive"> Ультра всё включено</label>
+            </div>
+          </fieldset>
+
+          <!-- Пляж -->
+          <fieldset class="filter-group">
+            <legend>Пляж</legend>
+            <div class="filter-options">
+              <p>Тип пляжа:</p>
+              <label><input type="checkbox" name="beachType" value="sand"> Песчаный</label>
+              <label><input type="checkbox" name="beachType" value="pebble"> Галечный</label>
+              <p>Вид пляжа:</p>
+              <label><input type="checkbox" name="beachView" value="public"> Общественный</label>
+              <label><input type="checkbox" name="beachView" value="private"> Частный</label>
+              <label><input type="checkbox" name="beachView" value="rocky"> Скалистый</label>
+            </div>
+          </fieldset>
+
+          <!-- Рейтинг (checkboxes) -->
+          <fieldset class="filter-group">
+            <legend>Количество звёзд</legend>
+            <div class="filter-options">
+              <label><input type="checkbox" name="stars" value="1"> 1 звезда</label>
+              <label><input type="checkbox" name="stars" value="2"> 2 звезды</label>
+              <label><input type="checkbox" name="stars" value="3"> 3 звезды</label>
+              <label><input type="checkbox" name="stars" value="4"> 4 звезды</label>
+              <label><input type="checkbox" name="stars" value="5"> 5 звёзд</label>
+            </div>
+          </fieldset>
+
+          <!-- Цена -->
+          <fieldset class="filter-group">
+            <legend>Цена</legend>
+            <div class="filter-options">
+              <label for="price-from">От (USD):</label>
+              <input type="number" id="price-from" name="price_from" placeholder="Минимальная цена">
+              <label for="price-to">До (USD):</label>
+              <input type="number" id="price-to" name="price_to" placeholder="Максимальная цена">
+            </div>
+          </fieldset>
+
+          <!-- Тип береговой  линии -->
+          <fieldset class="filter-group">
+            <legend>Береговая линия</legend>
+            <div class="filter-options">
+              <label><input type="checkbox" name="foodLine" value="3"> 3-я линия</label>
+              <label><input type="checkbox" name="foodLine" value="2"> 2-я линия</label>
+              <label><input type="checkbox" name="foodLine" value="1"> 1-я линия</label>
+            </div>
+          </fieldset>
+
+          <!-- Расстояние до центра -->
+          <fieldset class="filter-group">
+            <legend>Расположение</legend>
+            <div class="filter-options">
+              <label for="distance">До центра (км):</label>
+              <input type="number" id="distance" name="distance" placeholder="например, 10">
+            </div>
+          </fieldset>
+
+          <!-- Действия с фильтрами -->
+          <div class="filter-actions">
+            <button type="reset" class="btn-reset">Сбросить</button>
+            <button type="submit" class="btn-apply">Применить</button>
+          </div>
+        </form>
+      </aside>
+
+      <!-- Список отелей (правая колонка) -->
+      <section id="hotels-list">
+        <h2 class="section-title">Доступные отели</h2>
+        <!-- Кнопка сортировки -->
+        <div class="sort-bar">
+          <button id="sort-button" data-order="asc">Сортировать по цене по возрастанию</button>
+        </div>
+        <!-- Пример карточки отеля с data-атрибутами для фильтрации -->
+        <article class="hotel-card" data-price="4419" data-stars="5" data-nutrition="ultra_all_inclusive" data-foodline="3">
+          <figure class="hotel-gallery">
+            <img src="img/image.png" alt="Фотография отеля" class="hotel-image">
+            <figcaption>Фотография отеля</figcaption>
+          </figure>
+          <div class="hotel-info">
+            <h3 class="hotel-title">AZURA DELUXE RESORT & SPA</h3>
+            <p class="hotel-location">Авсаллар, Инжекум - Алания, Турция</p>
+            <p class="hotel-nutrition">UAI - Ультра всё включено</p>
+            <p class="hotel-room">Deluxe Land View</p>
+            <div class="star-rating">
+              <span class="star-icon"><img src="page4 img/star.svg" alt="звезда"></span>
+              <span class="star-icon"><img src="page4 img/star.svg" alt="звезда"></span>
+              <span class="star-icon"><img src="page4 img/star.svg" alt="звезда"></span>
+              <span class="star-icon"><img src="page4 img/star.svg" alt="звезда"></span>
+              <span class="star-icon"><img src="page4 img/star.svg" alt="звезда"></span>
+            </div>
+            <p class="hotel-price">4419 BYN</p>
+            <a href="#" class="btn-details">Подробнее</a>
+          </div>
+        </article>
+        <!-- Дополнительная карточка -->
+        <article class="hotel-card" data-price="3500" data-stars="4" data-nutrition="full_board" data-foodline="2">
+          <figure class="hotel-gallery">
+            <img src="img/hotel2.png" alt="Фотография отеля" class="hotel-image">
+            <figcaption>Фотография отеля</figcaption>
+          </figure>
+          <div class="hotel-info">
+            <h3 class="hotel-title">Hotel Sunrise</h3>
+            <p class="hotel-location">Москва, Россия</p>
+            <p class="hotel-nutrition">Завтрак, обед и ужин</p>
+            <p class="hotel-room">Standard Room</p>
+            <div class="star-rating">
+              <span class="star-icon"><img src="page4 img/star.svg" alt="звезда"></span>
+              <span class="star-icon"><img src="page4 img/star.svg" alt="звезда"></span>
+              <span class="star-icon"><img src="page4 img/star.svg" alt="звезда"></span>
+              <span class="star-icon"><img src="page4 img/star.svg" alt="звезда"></span>
+            </div>
+            <p class="hotel-price">3500 BYN</p>
+            <a href="#" class="btn-details">Подробнее</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="navigation-footer">
+      <div class="items-2">
+        <div class="items-name-text">Навигация</div>
+        <div class="items-text"><a href="/main.html">Главная</a></div>
+        <div class="items-text">О нас</div>
+        <div class="items-text">Контакты</div>
+        <div class="items-text">Наши направления</div>
+      </div>
+      <div class="items-3">
+        <div class="items-name-text">Поддержка</div>
+        <div class="items-text">Часто задаваемые вопросы</div>
+        <div class="items-text">Условия и политика конфиденциальности</div>
+        <div class="items-text">Обратная связь</div>
+        <div class="items-text">Контакты</div>
+      </div>
+      <div class="items-4">
+        <div class="items-name-text">Полезные ссылки</div>
+        <div class="items-text">Блог о путешествиях</div>
+        <div class="items-text">Советы туристам</div>
+        <div class="items-text">Путеводители</div>
+      </div>
+      <div class="footer-page-name">Dream Path</div>
+      <div class="social-icons">
+        <div class="buttons-icon">
+          <div class="icon2">
+            <img class="icon-2" src="page2 img/Telegram.svg" alt="Telegram" />
+          </div>
+        </div>
+        <div class="buttons-icon">
+          <div class="icon2">
+            <img class="icon-2" src="page2 img/Instagram.svg" alt="Instagram" />
+          </div>
+        </div>
+        <div class="buttons-icon">
+          <div class="icon2">
+            <img class="icon-2" src="page2 img/VK.svg" alt="VK" />
+          </div>
+        </div>
+        <div class="buttons-icon">
+          <div class="icon2">
+            <img class="icon-2" src="page2 img/Facebook.svg" alt="Facebook" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Скрипты -->
+    <script>
+      // Функция переключения видимости мобильного меню
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+    <script>
+      // Функция переключения мобильного меню (если требуется)
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+    <script>
+      // Фильтрация и сортировка карточек
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterForm = document.getElementById("filter-form");
+        let hotelCards = Array.from(document.querySelectorAll(".hotel-card"));
+        const sortButton = document.getElementById("sort-button");
+        
+        // Функция фильтрации карточек
+        function filterHotels() {
+          const formData = new FormData(filterForm);
+          const nutritionFilters = formData.getAll("nutrition");
+          const starsFilters = formData.getAll("stars"); // теперь массив чекбоксов
+          const priceFrom = formData.get("price_from");
+          const priceTo = formData.get("price_to");
+    
+          hotelCards.forEach(card => {
+            let visible = true;
+            const cardPrice = parseFloat(card.dataset.price);
+            const cardStars = card.dataset.stars; // строка
+            const cardNutrition = card.dataset.nutrition;
+            const cardFoodLine = card.dataset.foodline;
+            
+            // Фильтрация по питанию (если выбраны, кроме "Любое")
+            if (nutritionFilters.length && !nutritionFilters.includes("any") && !nutritionFilters.includes(cardNutrition)) {
+              visible = false;
+            }
+            
+            // Фильтрация по звёздам:
+            // Если хотя бы один чекбокс для звёзд выбран, карточка видна только если её рейтинг содержится среди выбранных.
+            if (starsFilters.length > 0 && !starsFilters.includes(cardStars)) {
+              visible = false;
+            }
+            
+            if (priceFrom && cardPrice < parseFloat(priceFrom)) {
+              visible = false;
+            }
+            if (priceTo && cardPrice > parseFloat(priceTo)) {
+              visible = false;
+            }
+            card.style.display = visible ? "flex" : "none";
+          });
+        }
+        
+        filterForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          filterHotels();
+        });
+        
+        // Функция сортировки по цене
+        function sortHotels(order) {
+          const container = document.getElementById("hotels-list");
+          // Выбираем только видимые карточки
+          hotelCards = Array.from(document.querySelectorAll(".hotel-card")).filter(card => card.style.display !== "none");
+          const sortedCards = hotelCards.sort((a, b) => {
+            const priceA = parseFloat(a.dataset.price);
+            const priceB = parseFloat(b.dataset.price);
+            return order === "asc" ? priceA - priceB : priceB - priceA;
+          });
+          // Перестановка карточек
+          sortedCards.forEach(card => container.appendChild(card));
+        }
+        
+        sortButton.addEventListener("click", function () {
+          let order = sortButton.dataset.order;
+          order = order === "asc" ? "desc" : "asc";
+          sortButton.dataset.order = order;
+          sortButton.textContent = order === "asc" ? "Сортировать по цене по возрастанию" : "Сортировать по цене по убыванию";
+          sortHotels(order);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Akka Alinda Hotel.xsl"?>
+<page>
+  <meta>
+    <title>Dream Path - Akka Alinda Hotel</title>
+  </meta>
+  <header>
+    <logo>page4 img/логотип.svg</logo>
+    <siteName>Dream Path</siteName>
+    <desktopMenu>
+      <item link="/страница туров\second_page.html">Туры</item>
+      <item link="/страница бронирования\page4.html">Бронирование</item>
+      <item link="/страница контактов\page3.html">Контакты</item>
+      <item link="/main.html">Главная</item>
+    </desktopMenu>
+    <mobileMenu>
+      <item link="/страница туров\second_page.html">Туры</item>
+      <item link="/страница бронирования\page4.html">Бронирование</item>
+      <item link="/страница контактов\page3.html">Контакты</item>
+      <item link="/main.html">Главная</item>
+    </mobileMenu>
+  </header>
+  <hotelInfo>
+    <hotelName>Akka Alinda Hotel</hotelName>
+    <rating>5</rating>
+    <location>Турция, Кемер, Кириш</location>
+    <gallery>
+      <mainImage>page4 img/Akka Alinda Hotel/0.jpg</mainImage>
+      <thumbnails>
+        <thumbnail>page4 img/Akka Alinda Hotel/0.jpg</thumbnail>
+        <thumbnail>page4 img/Akka Alinda Hotel/1.jpg</thumbnail>
+        <thumbnail>page4 img/Akka Alinda Hotel/2.jpg</thumbnail>
+        <thumbnail>page4 img/Akka Alinda Hotel/3.jpg</thumbnail>
+        <thumbnail>page4 img/Akka Alinda Hotel/4.jpg</thumbnail>
+        <thumbnail>page4 img/Akka Alinda Hotel/5.jpg</thumbnail>
+        <thumbnail>page4 img/Akka Alinda Hotel/6.jpg</thumbnail>
+        
+      </thumbnails>
+    </gallery>
+    <booking>
+      <flight>Перелет на регулярном рейсе</flight>
+      <room>Тип номера: Standard Side Blok</room>
+      <food>Питание: PREMIUM UAI</food>
+      <guestCount>1</guestCount>
+      <nights>7</nights>
+      <departureDate>2023-08-27</departureDate>
+      <price>4775 BYN</price>
+    </booking>
+   <map>
+  
+</map>
+
+    <description>
+      <descriptionTitle>Описание отеля AKKA ALINDA HOTEL</descriptionTitle>
+      <short>
+Отель расположен в уютном местечке Кириш. Зеленая территория, хороший уровень сервиса, большой выбор развлекательных мероприятий. Рекомендуем для семейного отдыха.
+      </short>
+      <about xml:space="preserve">
+Построен в 1995 году, общая площадь 32 000м2, последняя реновация прошла в 2018 году.
+Отель состоит из одного 5-этажного здания Мain Building, двух 3-этажных и четырех 2-этажных зданий Аnnex.
+Main Building:
+195 standard room (макс. 3 чел., 22–26 м2);
+15 двухкомнатных family room (2 спальни, макс. 3+1 чел., 32–36 м2);
+1 трехкомнатный king suite (гостиная, 2 спальни с дверью, 2 ванные комнаты, терраса, макс. 4 чел., 110 м2).
+Annex:
+72 standard side block (макс. 3 чел., 22–25 м2);
+12 apart standard (макс. 3 чел., 24 м2);
+42 comfort standard (привилегии по концепции, макс. 3 чел., 28–32 м2);
+49 двухуровневых duplex family room (на каждом уровне спальня, макс. 5 чел., 40 м2);
+11 двухкомнатных comfort family room (привилегии по концепции, 2 спальни, 2 ванные комнаты, макс. 4 чел., 36 м2).
+      </about>
+      <surroundings>
+        <item>Торговый центр: 44 км</item>
+        <item>Автобусная остановка или метро: 5 м</item>
+        <item>Лыжный подъемник: 92 км</item>
+        <item>БАНКОМАТ: 50 м</item>
+      </surroundings>
+      <adultPools>
+        <count>3</count>
+        <detail>Открытый Бассейн (квадрат 1400 кв.м., глубина 110-185 см)</detail>
+        <detail>Крытый Бассейн (С подогревом, квадрат 80 кв.м., глубина 140 см)</detail>
+        <detail>Открытый Бассейн (С подогревом, квадрат 145 кв.м., глубина 140 см)</detail>
+      </adultPools>
+      <childPools>
+        <detail>Открытый Бассейн (квадрат 5 кв.м., глубина 30 см)</detail>
+      </childPools>
+      <beach>
+        <item>Первая береговая линия , Между отелем и пляжем проходит дорога</item>
+        <item>Частный пляж, длина 50 м</item>
+        <item>Песчано-галечный пляж</item>
+        <item>Песчано-галечный вход в воду</item>
+        <item>Зонты</item>
+        <item>Шезлонги</item>
+        <item>Пляжные полотенца</item>
+        <item>Душ на пляже</item>
+        <item>Питание и напитки на пляже</item>
+      </beach>
+    </description>
+  </hotelInfo>
+  <footer>
+    <navigation>
+      <column id="nav">
+        <title>Навигация</title>
+        <item link="/main.html"> Главная</item>
+        <item link="/страница бронирования\page4.html">Бронирование</item>
+        <item link="/страница туров\second_page.html">Туры</item>
+        
+      </column>
+      <column id="support">
+        <title>Поддержка</title>
+        <item link="/ссылки\Политика конфиденциальности.html">Условия и политика конфиденциальности</item>
+        <item link="/страница контактов\page3.html">Контакты</item>
+      </column>
+      <column id="links">
+        <title>Полезные ссылки</title>
+        <item link="https://www.onetwotrip.com/ru/blog/?srsltid=AfmBOoqs3N9KBErS3v9w7IoZlBJmfRO1Ssvwqpn-LmxNWgSU7yEbUGM4">Блог о путешествиях</item>
+        <item link="https://sutochno.ru/info/nachinayuschiy-puteshestvennik">Советы туристам</item>
+        <item link="https://www.tutu.ru/geo/">Путеводители</item>
+      </column>
+    </navigation>
+    <siteName>Dream Path</siteName>
+    <socialIcons>
+      <icon>page4 img/Telegram.svg</icon>
+      <icon>page4 img/Instagram.svg</icon>
+      <icon>page4 img/VK.svg</icon>
+      <icon>page4 img/Facebook.svg</icon>
+    </socialIcons>
+  </footer>
+  
+</page>

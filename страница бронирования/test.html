@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Path - Фильтры и Отели</title>
+    <link rel="stylesheet" href="page4global.css" />
+    <link rel="stylesheet" href="page4text.css" />
+    <link rel="stylesheet" href="page4style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <!-- Шапка сайта -->
+      <header class="site-header">
+        <div class="logo-header">
+          <img src="img/логотип.svg" alt="Dream Path Logo" class="logo-icon" />
+          <h1 class="site-name">Dream Path</h1>
+        </div>
+        <nav class="desktop-menu">
+          <a href="#" class="menu-item">Туры</a>
+          <a href="#" class="menu-item">Бронирование</a>
+          <a href="#" class="menu-item">Контакты</a>
+          <button class="login-button"><span>Войти</span></button>
+        </nav>
+        <!-- Мобильное меню -->
+        <nav class="mobile-menu" id="mobileMenu">
+          <a href="#" class="menu-item">Туры</a>
+          <a href="#" class="menu-item">Бронирование</a>
+          <a href="#" class="menu-item">Контакты</a>
+          <button class="login-button"><span>Войти</span></button>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Секция фильтров -->
+        <section id="filter-panel">
+          <h2 class="section-title">Фильтры</h2>
+          <form id="filter-form">
+            <!-- Питание и услуги -->
+            <fieldset class="filter-group">
+              <legend>Питание и услуги</legend>
+              <div class="filter-options">
+                <label>
+                  <input type="checkbox" name="nutrition" value="all_inclusive" />
+                  Всё включено
+                </label>
+                <label>
+                  <input type="checkbox" name="nutrition" value="breakfast_dinner" />
+                  Завтрак и ужин
+                </label>
+                <label>
+                  <input type="checkbox" name="nutrition" value="breakfast_only" />
+                  Только завтраки
+                </label>
+                <label>
+                  <input type="checkbox" name="nutrition" value="no_meal" />
+                  Без питания
+                </label>
+                <label>
+                  <input type="checkbox" name="nutrition" value="full_board" />
+                  Завтрак, обед и ужин
+                </label>
+                <label>
+                  <input type="checkbox" name="nutrition" value="any" checked />
+                  Любое
+                </label>
+                <label>
+                  <input type="checkbox" name="nutrition" value="ultra_all_inclusive" />
+                  Ультра всё включено
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Пляж и его вид -->
+            <fieldset class="filter-group">
+              <legend>Пляж</legend>
+              <div class="filter-options">
+                <div class="filter-subgroup">
+                  <p>Тип пляжа:</p>
+                  <label>
+                    <input type="checkbox" name="beachType" value="sand" />
+                    Песчаный пляж
+                  </label>
+                  <label>
+                    <input type="checkbox" name="beachType" value="pebble" />
+                    Галечный пляж
+                  </label>
+                </div>
+                <div class="filter-subgroup">
+                  <p>Вид пляжа:</p>
+                  <label>
+                    <input type="checkbox" name="beachView" value="public" />
+                    Общественный пляж
+                  </label>
+                  <label>
+                    <input type="checkbox" name="beachView" value="private" />
+                    Частный пляж
+                  </label>
+                  <label>
+                    <input type="checkbox" name="beachView" value="rocky" />
+                    Скалистый пляж
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- Рейтинг отеля -->
+            <fieldset class="filter-group">
+              <legend>Количество звёзд</legend>
+              <div class="filter-options">
+                <label>
+                  <input type="radio" name="stars" value="any" checked />
+                  Любое
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="1" />
+                  1 звезда
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="2" />
+                  2 звезды
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="3" />
+                  3 звезды
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="4" />
+                  4 звезды
+                </label>
+                <label>
+                  <input type="radio" name="stars" value="5" />
+                  5 звёзд
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Цена -->
+            <fieldset class="filter-group">
+              <legend>Цена</legend>
+              <div class="filter-options">
+                <label for="price-from">От (USD):</label>
+                <input type="number" id="price-from" name="price_from" placeholder="Минимальная цена" />
+                <label for="price-to">До (USD):</label>
+                <input type="number" id="price-to" name="price_to" placeholder="Максимальная цена" />
+              </div>
+            </fieldset>
+
+            <!-- Тип питания по линии -->
+            <fieldset class="filter-group">
+              <legend>Тип питания</legend>
+              <div class="filter-options">
+                <label>
+                  <input type="checkbox" name="foodLine" value="3" />
+                  3-я линия
+                </label>
+                <label>
+                  <input type="checkbox" name="foodLine" value="2" />
+                  2-я линия
+                </label>
+                <label>
+                  <input type="checkbox" name="foodLine" value="1" />
+                  1-я линия
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Расстояние до центра города -->
+            <fieldset class="filter-group">
+              <legend>Расположение</legend>
+              <div class="filter-options">
+                <label for="distance">Расстояние до центра (км):</label>
+                <input type="number" id="distance" name="distance" placeholder="Например, 10" />
+              </div>
+            </fieldset>
+
+            <!-- Действия -->
+            <div class="filter-actions">
+              <button type="reset" class="btn-reset">Сбросить</button>
+              <button type="submit" class="btn-apply">Применить</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- Секция списка отелей -->
+        <section id="hotels-list">
+          <h2 class="section-title">Доступные отели</h2>
+          <!-- Пример карточки отеля -->
+          <article class="hotel-card">
+            <figure class="hotel-gallery">
+              <img src="img/image.png" alt="Фотография отеля" class="hotel-image" />
+              <figcaption>Фотография отеля</figcaption>
+            </figure>
+            <div class="hotel-info">
+              <h3 class="hotel-title">AZURA DELUXE RESORT & SPA</h3>
+              <p class="hotel-location">Авсаллар, Инжекум - Алания, Турция</p>
+              <p class="hotel-nutrition">UAI - Ультра всё включено</p>
+              <p class="hotel-room">Deluxe Land View</p>
+              <div class="star-rating">
+                <span class="star-icon"><img src="img/star-17.svg" alt="звезда" /></span>
+                <span class="star-icon"><img src="img/star-17.svg" alt="звезда" /></span>
+                <span class="star-icon"><img src="img/star-17.svg" alt="звезда" /></span>
+                <span class="star-icon"><img src="img/star-17.svg" alt="звезда" /></span>
+                <span class="star-icon"><img src="img/star-17.svg" alt="звезда" /></span>
+              </div>
+              <p class="hotel-price">4419 BYN</p>
+              <a href="#" class="btn-details">Подробнее</a>
+            </div>
+          </article>
+          <!-- Дополнительные карточки можно добавлять аналогичным образом -->
+        </section>
+      </main>
+
+      <!-- Футер -->
+      <footer class="site-footer">
+        <nav class="footer-nav">
+          <div class="footer-section">
+            <h3>Навигация</h3>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Наши направления</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Поддержка</h3>
+            <ul>
+              <li><a href="#">Часто задаваемые вопросы</a></li>
+              <li><a href="#">Условия и политика конфиденциальности</a></li>
+              <li><a href="#">Обратная связь</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Полезные ссылки</h3>
+            <ul>
+              <li><a href="#">Блог о путешествиях</a></li>
+              <li><a href="#">Советы туристам</a></li>
+              <li><a href="#">Путеводители</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="footer-branding">
+          <p>Dream Path</p>
+          <div class="social-icons">
+            <a href="#"><img src="img/icon.svg" alt="Telegram" /></a>
+            <a href="#"><img src="img/icon-3.svg" alt="Instagram" /></a>
+            <a href="#"><img src="img/icon-2.svg" alt="VK" /></a>
+            <a href="#"><img src="img/icon-4.svg" alt="Facebook" /></a>
+          </div>
+          <img class="divider" src="img/divider.svg" alt="Разделитель" />
+        </div>
+      </footer>
+    </div>
+
+    <!-- Скрипты для функциональности -->
+    <script>
+      // Переключение мобильного меню
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.style.display =
+          mobileMenu.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Пример инициализации галереи (если используются миниатюры)
+        const mainImage = document.querySelector(".hotel-image");
+        const thumbnails = document.querySelectorAll(".thumbnail");
+        const prevButton = document.querySelector(".gallery-nav.prev");
+        const nextButton = document.querySelector(".gallery-nav.next");
+
+        let currentIndex = 0;
+
+        function updateMainImage(index) {
+          mainImage.src = thumbnails[index].src;
+          thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+          thumbnails[index].classList.add("active");
+          currentIndex = index;
+        }
+
+        thumbnails.forEach((thumbnail, index) => {
+          thumbnail.addEventListener("click", () => updateMainImage(index));
+        });
+
+        if (prevButton && nextButton && thumbnails.length > 0) {
+          prevButton.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+            updateMainImage(currentIndex);
+          });
+          nextButton.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % thumbnails.length;
+            updateMainImage(currentIndex);
+          });
+          updateMainImage(0);
+        }
+      });
+    </script>
+  </body>
+</html>

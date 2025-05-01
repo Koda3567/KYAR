@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Path - Туристическое агентство</title>
+
+    <link rel="stylesheet" href="page3text.css" />
+    <link rel="stylesheet" href="page3style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      
+        
+      
+      <main>
+        <div class="div">
+          <div class="navigation-header">
+            <div class="logo-header">
+              <img src="page3 img/логотип.svg" alt="Dream Path Logo" class="logo-icon">
+              <div class="site-name">Dream Path</div>
+            </div>
+           
+            <div class="desktop-menu">
+              <div class="header-text-items"><a href="/страница туров\second_page.html">Туры</a></div>
+            <div class="header-text-items"><a href="/страница бронирования/page4.html">Бронирование</a></div>
+            <div class="header-text-items"><a href="/страница контактов\page3.html">Контакты</a></div>
+            <div class="header-text-items"><a href="/main.html">Главная</a></div>
+            </div>
+    
+           
+            <div class="mobile-header">
+             
+              <div class="mobile-hamburger-container">
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                
+                <div class="mobile-menu" id="mobileMenu">
+                  <div class="header-text-items"><a href="/страница туров\second_page.html">Туры</a></div>
+                <div class="header-text-items"><a href="/страница бронирования/page4.html">Бронирование</a></div>
+                <div class="header-text-items"><a href="/страница контактов\page3.html">Контакты</a></div>
+                <div class="header-text-items"><a href="/main.html">Главная</a></div>
+                </div>
+              </div>
+              
+            </div>
+    
+          </div>
+      </div>
+        <div class="content-wrapper">
+          <div class="left-column">
+            <form class="search-form" role="search">
+              <label for="address-search" class="visually-hidden">Поиск по адресу</label>
+              <input type="search" id="address-search" class="search-input" placeholder="Поиск по адресу" />
+              <button type="submit" class="search-button" aria-label="Искать">
+                <img class="search-icon" src="page3 img/search.svg" alt="Иконка поиска" />
+              </button>
+            </form>
+            <div id="contact-cards">
+              <section class="contact-info" data-address="Улица 1, Точный адрес 1">
+              <h2 class="contact-heading">Dream Path, Свердлова 13</h2>
+              <address>
+                <p>
+                  <img class="icon" src="page3 img/location.svg" alt="Иконка адреса" />
+                  <span class="contact-text">Свердлова</span>
+                </p>
+                <p>
+                  <img class="icon" src="page3 img/maps.svg" alt="Иконка карты" />
+                  <span class="contact-text">Свердлова 13</span>
+                </p>
+                <p>
+                  <img class="icon" src="page3 img/phone.svg" alt="Иконка телефона" />
+                  <span class="contact-text">Телефон</span>
+                </p>
+                <p>
+                  <img class="icon" src="page3 img/mail.svg" alt="Иконка почты" />
+                  <span class="contact-text">Почта</span>
+                </p>
+              </address>
+            </section>
+              <section class="contact-info" data-address="Улица 2, Точный адрес 2">
+              <h2 class="contact-heading">Dream Path, Маяковского 11</h2>
+              <address>
+                <p>
+                  <img class="icon" src="page3 img/location.svg" alt="Иконка адреса" />
+                  <span class="contact-text">Маяковского</span>
+                </p>
+                <p>
+                  <img class="icon" src="page3 img/maps.svg" alt="Иконка карты" />
+                  <span class="contact-text">Маяковского 11</span>
+                </p>
+                <p>
+                  <img class="icon" src="page3 img/phone.svg" alt="Иконка телефона" />
+                  <span class="contact-text">Телефон</span>
+                </p>
+                <p>
+                  <img class="icon" src="page3 img/mail.svg" alt="Иконка почты" />
+                  <span class="contact-text">Почта</span>
+                </p>
+              </address>
+            </section>
+              <section class="contact-info" data-address="Улица 3, Точный адрес 3">
+              <h2 class="contact-heading">Dream Path + Адрес</h2>
+              <address>
+                <p>
+                  <img class="icon" src="page3 img/location.svg" alt="Иконка адреса" />
+                  <span class="contact-text">Улица</span>
+                </p>
+                <p>
+                  <img class="icon" src="page3 img/maps.svg" alt="Иконка карты" />
+                  <span class="contact-text">Точный адрес</span>
+                </p>
+                <p>
+                  <img class="icon" src="page3 img/phone.svg" alt="Иконка телефона" />
+                  <span class="contact-text">Телефон</span>
+                </p>
+                <p>
+                  <img class="icon" src="page3 img/mail.svg" alt="Иконка почты" />
+                  <span class="contact-text">Почта</span>
+                </p>
+              </address>
+            </section>
+              </section>
+            </div>
+          </div>
+          <div class="right-column">
+            <div style="width: 100%;" id="yandex-map"></div>
+          </div>
+          <script src="https://api-maps.yandex.ru/2.1/?apikey=8feb2dce-70a6-4096-b2cd-cd56e9f37ef6&lang=ru_RU" type="text/javascript"></script>
+
+          <script>
+            ymaps.ready(init);
+            function init() {
+              // Создаем карту в контейнере "yandex-map" с центром в Минске
+              var myMap = new ymaps.Map("yandex-map", {
+                center: [53.9, 27.56667], // Координаты центра Минска
+                zoom: 12,
+                controls: ['zoomControl', 'geolocationControl'] // Добавляем контролы для интерактивности
+              });
+              
+              // Массив с данными меток (координаты и описание)
+              var myPlacemarks = [
+                {
+                  coords: [53.892187, 27.558444],
+                  hintContent: 'Свердлова 13',
+                  balloonContent: 'Свердлова 13, Минск'
+                },
+                {
+                  coords: [53.883389, 27.569098],
+                  hintContent: 'Маяковского 11',
+                  balloonContent: 'Маяковского 11, Минск'
+                }
+              ];
+              
+              // Добавляем метки (Placemark) на карту
+              myPlacemarks.forEach(function(item) {
+                var placemark = new ymaps.Placemark(item.coords, {
+                  hintContent: item.hintContent,
+                  balloonContent: item.balloonContent
+                });
+                myMap.geoObjects.add(placemark);
+              });
+            }
+          </script>
+          
+          
+                    
+        </div>
+      </main>
+      <script src="script.js"></script>
+      <footer class="navigation-footer">
+        <div class="items-2">
+          <div class="items-name-text">Навигация</div>
+          <div class="items-text"><a href="/main.html">Главная</a></div>
+        <div class="items-text"><a href="/страница бронирования/page4.html">Бронирование</a></div>
+        <div class="items-text"><a href="/страница туров/second_page.html">Туры</a></div>
+        </div>
+        <div class="items-3">
+          <div class="items-name-text">Поддержка</div>
+          <div class="items-text"><a href="/страница контактов/page3.html">Контакты</a></div>
+          <div class="items-text"><a href="/ссылки/Политика конфиденциальности.html">Условия и политика конфиденциальности</a></div>
+        </div>
+        <div class="items-4">
+          <div class="items-name-text">Полезные ссылки</div>
+          <div class="items-text"><a href="https://www.onetwotrip.com/ru/blog/?srsltid=AfmBOoqs3N9KBErS3v9w7IoZlBJmfRO1Ssvwqpn-LmxNWgSU7yEbUGM4">Блог о путешествиях</a></div>
+        <div class="items-text"><a href="https://sutochno.ru/info/nachinayuschiy-puteshestvennik">Советы туристам</a></div>
+        <div class="items-text"><a href="https://www.tutu.ru/geo/">Путеводители</a></div>
+        </div>
+        <div class="footer-page-name">Dream Path</div>
+        <div class="social-icons">
+          <div class="buttons-icon">
+            <div class="icon2">
+              <img class="icon-2" src="page3 img/Telegram.svg" alt="Telegram" />
+            </div>
+          </div>
+          <div class="buttons-icon">
+            <div class="icon2">
+              <img class="icon-2" src="page3 img/Instagram.svg" alt="Instagram" />
+            </div>
+          </div>
+          <div class="buttons-icon">
+            <div class="icon2">
+              <img class="icon-2" src="page3 img/VK.svg" alt="VK" />
+            </div>
+          </div>
+          <div class="buttons-icon">
+            <div class="icon2">
+              <img class="icon-2" src="page3 img/Facebook.svg" alt="Facebook" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // Функция переключения видимости мобильного меню
+      function toggleMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+      }
+    </script>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+      const searchForm = document.querySelector('.search-form');
+      const searchInput = document.getElementById('address-search');
+      const contactCards = document.querySelectorAll('.contact-info');
+    
+      // Функция, которая выполняет поиск по всем текстовым данным внутри карточки
+      function searchContacts() {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        
+        contactCards.forEach(card => {
+          // Собираем текст из всех элементов внутри карточки с классом .contact-text
+          const texts = Array.from(card.querySelectorAll('.contact-text'))
+                             .map(el => el.textContent.toLowerCase());
+          // Объединяем все тексты в одну строку
+          const combinedText = texts.join(" ");
+          
+          // Если поисковый запрос пустой или содержится в комбинированном тексте, показываем карточку
+          if (searchTerm === "" || combinedText.includes(searchTerm)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    
+      // Обработка отправки формы: предотвращаем стандартное поведение и выполняем поиск
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        searchContacts();
+      });
+    
+      // Реализуем поиск в реальном времени при вводе
+      searchInput.addEventListener('input', function() {
+        searchContacts();
+      });
+    });
+    
+    
+      </script>
+  </body>
+</html>

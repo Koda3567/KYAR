@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Path - Выбор тура</title>
+    <link rel="stylesheet" href="page2text.css" />
+    <link rel="stylesheet" href="page2style.css" />
+    <link rel="stylesheet" href="flatpickr.min.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <main class="main-content">
+        <div class="div">
+            <div class="navigation-header">
+              <div class="logo-header">
+                <img src="page2 img/логотип.svg" alt="Dream Path Logo" class="logo-icon">
+                <div class="site-name">Dream Path</div>
+              </div>
+             
+              <div class="desktop-menu">
+                <div class="header-text-items"><a href="/страница туров\second_page.html">Туры</a></div>
+            <div class="header-text-items"><a href="/страница бронирования/page4.html">Бронирование</a></div>
+            <div class="header-text-items"><a href="/страница контактов\page3.html">Контакты</a></div>
+            <div class="header-text-items"><a href="/main.html">Главная</a></div>
+              </div>
+      
+             
+              <div class="mobile-header">
+               
+                <div class="mobile-hamburger-container">
+                  <div class="hamburger" onclick="toggleMenu()">☰</div>
+                  
+                  <div class="mobile-menu" id="mobileMenu">
+                    <div class="header-text-items"><a href="/страница туров\second_page.html">Туры</a></div>
+                <div class="header-text-items"><a href="/страница бронирования/page4.html">Бронирование</a></div>
+                <div class="header-text-items"><a href="/страница контактов\page3.html">Контакты</a></div>
+                <div class="header-text-items"><a href="/main.html">Главная</a></div>
+                  </div>
+                </div>
+
+              </div>
+      
+            </div>
+        </div>
+          <h2 class="page-title">Выбор тура</h2>
+       
+          
+              <!-- Форма поиска туров -->
+              <section class="tour-search">
+                <form class="search-form">
+                  <div class="form-group">
+                    <label for="departure-city" class="visually-hidden">Город вылета</label>
+                    <input type="text" id="departure-city" class="form-control" placeholder="Город вылета" />
+                    <img class="icon" src="page2 img/location.svg" alt="Выбрать город" />
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="destination" class="visually-hidden">Страна, город</label>
+                    <input type="text" id="destination" class="form-control" placeholder="Страна, город" />
+                    <img class="icon" src="page2 img/location.svg" alt="Выбрать страну и город" />
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="date" class="visually-hidden">Выбрать дату</label>
+                    <input type="text" id="date" class="form-control" placeholder="Выбрать дату" />
+                    
+                    <img class="icon" src="page2 img/date.svg" alt="Календарь" />
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="nights" class="visually-hidden">Количество ночей</label>
+                    <input type="number" id="nights" class="form-control" placeholder="Количество ночей" min="1" />
+                    <img class="icon" src="page2 img/time.svg" alt="Выбрать количество ночей" />
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="people" class="visually-hidden">Количество людей</label>
+                    <input type="number" id="people" class="form-control" placeholder="Количество людей" min="1" />
+                    <img class="icon" src="page2 img/people.svg" alt="Выбрать количество людей" />
+                  </div>
+            
+                  <button type="submit" class="search-button">
+                    <div class="login-text">Найти</div>
+                    <img class="icon" style="left: 25%; transform: translateY(-35%);" src="page2 img/search.svg" alt="Поиск" />
+                  </button>
+                </form>
+              </section>
+        <h3 class="section-title">Лучшие предложения</h3>
+        <section class="search-results">
+          <div class="results-header">
+            <p class="results-count">Доступно 0 предложений</p>
+            <div class="sort-dropdown">
+              <button class="sort-button">
+                <span>По цене</span>
+                
+              </button>
+              
+            </div>
+          </div>
+          <div class="tour-grid">
+          </div>
+        </section>
+      </main>
+
+      <footer class="navigation-footer">
+        <div class="items-2">
+          <div class="items-name-text">Навигация</div>
+          <div class="items-text"><a href="/main.html">Главная</a></div>
+          <div class="items-text"><a href="/страница бронирования/page4.html">Бронирование</a></div>
+          <div class="items-text"><a href="/страница туров/second_page.html">Туры</a></div>
+        </div>
+        <div class="items-3">
+          <div class="items-name-text">Поддержка</div>
+          <div class="items-text"><a href="/страница контактов/page3.html">Контакты</a></div>
+          <div class="items-text"><a href="/ссылки/Политика конфиденциальности.html">Условия и политика конфиденциальности</a></div>
+        </div>
+        <div class="items-4">
+          <div class="items-name-text">Полезные ссылки</div>
+          <div class="items-text"><a href="https://www.onetwotrip.com/ru/blog/?srsltid=AfmBOoqs3N9KBErS3v9w7IoZlBJmfRO1Ssvwqpn-LmxNWgSU7yEbUGM4">Блог о путешествиях</a></div>
+            <div class="items-text"><a href="https://sutochno.ru/info/nachinayuschiy-puteshestvennik">Советы туристам</a></div>
+            <div class="items-text"><a href="https://www.tutu.ru/geo/">Путеводители</a></div>
+        </div>
+        <div class="footer-page-name">Dream Path</div>
+        <div class="social-icons">
+          <div class="buttons-icon">
+            <div class="icon2">
+              <img class="icon-2" src="page2 img/Telegram.svg" alt="Telegram" />
+            </div>
+          </div>
+          <div class="buttons-icon">
+            <div class="icon2">
+              <img class="icon-2" src="page2 img/Instagram.svg" alt="Instagram" />
+            </div>
+          </div>
+          <div class="buttons-icon">
+            <div class="icon2">
+              <img class="icon-2" src="page2 img/VK.svg" alt="VK" />
+            </div>
+          </div>
+          <div class="buttons-icon">
+            <div class="icon2">
+              <img class="icon-2" src="page2 img/Facebook.svg" alt="Facebook" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+              <script>
+                // Функция переключения видимости мобильного меню
+                function toggleMenu() {
+                  const mobileMenu = document.getElementById("mobileMenu");
+                  mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
+                }
+              </script>
+              <script src="flatpickr.js"></script>
+              <script>
+               document.addEventListener("DOMContentLoaded", function () {
+  // Инициализация календаря для поля даты
+  const dateInput = document.getElementById("date");
+  flatpickr(dateInput, {
+    dateFormat: "d.m.Y"
+  });
+
+
+  let tourCardCount = 0;
+
+
+  let sortOrder = "asc";
+
+  function updateResultsCount(count) {
+    const resultsElem = document.querySelector(".results-count");
+    if (resultsElem) {
+      resultsElem.textContent = "Доступно " + count + " предложений";
+    }
+  }
+
+  function addTourCard(
+    cardTitle,
+    imageSrc,
+    departureCity,
+    country,
+    city,
+    price,
+    oldPrice,
+    departureDate,
+    nights,
+    untilDate,
+    starRating,
+    boardType,
+    uniqueLink
+  ) {
+    // Создаем оболочку карточки (элемент-ссылка) и используем переданный uniqueLink для href
+    const cardLink = document.createElement("a");
+    cardLink.href = uniqueLink;
+    cardLink.classList.add("tour-card-link");
+
+    const card = document.createElement("article");
+    card.classList.add("tour-card");
+
+    // Для фильтрации сохраняем дополнительные данные:
+    card.dataset.departureCity = departureCity.toLowerCase();
+    card.dataset.country = country.toLowerCase();
+    card.dataset.city = city.toLowerCase();
+    card.dataset.departureDate = departureDate;
+    card.dataset.nights = nights;
+
+    // Скрытый заголовок для доступности
+    if (cardTitle) {
+      const titleElem = document.createElement("h3");
+      titleElem.classList.add("tour-title", "visually-hidden");
+      titleElem.textContent = cardTitle;
+      card.appendChild(titleElem);
+    }
+
+    // Изображение
+    const img = document.createElement("img");
+    img.src = imageSrc;
+    img.alt = cardTitle ? cardTitle : `${country}, ${city}`;
+    img.classList.add("tour-image");
+    card.appendChild(img);
+
+    // Оверлей с информацией
+    const infoDiv = document.createElement("div");
+    infoDiv.classList.add("tour-info");
+
+    // Страна
+    const countryElem = document.createElement("h4");
+    countryElem.classList.add("tour-country");
+    countryElem.textContent = country;
+    infoDiv.appendChild(countryElem);
+
+    // Город
+    const cityElem = document.createElement("p");
+    cityElem.classList.add("tour-city");
+    cityElem.textContent = city;
+    infoDiv.appendChild(cityElem);
+
+    // Название отеля (появляется при hover)
+    const hotelNameElem = document.createElement("p");
+    hotelNameElem.classList.add("hotel-name", "additional-info");
+    hotelNameElem.textContent = cardTitle;
+    infoDiv.appendChild(hotelNameElem);
+
+    // Блок для цен
+    const priceContainer = document.createElement("div");
+    priceContainer.classList.add("price-container");
+
+    const priceElem = document.createElement("span");
+    priceElem.classList.add("tour-price");
+    priceElem.textContent = price;
+    priceContainer.appendChild(priceElem);
+
+    const oldPriceElem = document.createElement("span");
+    oldPriceElem.classList.add("tour-old-price");
+    oldPriceElem.textContent = oldPrice;
+    priceContainer.appendChild(oldPriceElem);
+
+    infoDiv.appendChild(priceContainer);
+
+    // Дополнительная информация (при hover)
+    const pricePerPersonElem = document.createElement("p");
+    pricePerPersonElem.classList.add("price-per-person", "additional-info");
+    pricePerPersonElem.textContent = "Цена за человека";
+    infoDiv.appendChild(pricePerPersonElem);
+
+    const departureFirstElem = document.createElement("p");
+    departureFirstElem.classList.add("departure-first", "additional-info");
+    departureFirstElem.textContent = `Вылет -> ${departureDate}`;
+    infoDiv.appendChild(departureFirstElem);
+
+    const departureSecondElem = document.createElement("p");
+    departureSecondElem.classList.add("departure-second", "additional-info");
+    departureSecondElem.textContent = `Ночей: ${nights}, до: ${untilDate}`;
+    infoDiv.appendChild(departureSecondElem);
+
+    const bottomRightInfo = document.createElement("div");
+    bottomRightInfo.classList.add("bottom-right-info", "additional-info");
+
+    const starRatingElem = document.createElement("span");
+    starRatingElem.classList.add("star-rating");
+    starRatingElem.textContent = `⭐ ${starRating}`;
+    bottomRightInfo.appendChild(starRatingElem);
+
+    const boardTypeElem = document.createElement("span");
+    boardTypeElem.classList.add("board-type");
+    boardTypeElem.textContent = boardType;
+    bottomRightInfo.appendChild(boardTypeElem);
+
+    infoDiv.appendChild(bottomRightInfo);
+    card.appendChild(infoDiv);
+
+    // Оборачиваем карточку в ссылку
+    cardLink.appendChild(card);
+
+    // Добавляем карточку-ссылку в контейнер с карточками
+    const grid = document.querySelector(".tour-grid");
+    if (grid) {
+      grid.appendChild(cardLink);
+      tourCardCount++;
+      updateResultsCount(tourCardCount);
+    } else {
+      console.error("Контейнер с классом .tour-grid не найден!");
+    }
+  }
+
+                  // Пример добавления нескольких карточек:
+                  addTourCard(
+                      "KUREDU ISLAND RESORT",                            // Название отеля
+                      "page2 img/KUREDU ISLAND RESORT.jpg",            // Путь к изображению 
+                      "Минск",
+                      "Мальдивы",                                        // Страна
+                      "Мальдивы",                                 // Город
+                      "6091 BYN",                                      // Основная цена
+                      "7165 BYN",                                      // Старая цена
+                      "23.04.2025",                                    // Дата вылета
+                      "7",                                             // Количество ночей
+                      "30.04.2025",                                    // До какого числа
+                      "4",                                             // Количество звёзд
+                      "FB - Завтрак, обед и ужин",
+                      "https:...?id=123"                                // Тип питания
+                    );
+                    addTourCard(
+                      "Movenpick Resort Al Marjan Island",                            // Название отеля
+                      "page2 img/Movenpick Resort.jpg",            // Путь к изображению 
+                      "Москва",
+                      "ОАЭ",                                        // Страна
+                      "Рас-аль-Хайма",                                 // Город
+                      "2594 BYN",                                      // Основная цена
+                      "3244 BYN",                                      // Старая цена
+                      "13.05.2025",                                    // Дата вылета
+                      "7",                                             // Количество ночей
+                      "20.05.2025",                                    // До какого числа
+                      "5",                                             // Количество звёзд
+                      "BB - Только завтраки"                                  // Тип питания
+                    );
+                    addTourCard(
+                      "Constance Ephelia Seychelles",                            // Название отеля
+                      "page2 img/Constance Ephelia Seychelles.jpg",            // Путь к изображению 
+                      "Москва",
+                      "Сейшелы",                                        // Страна
+                      "Маэ",                                 // Город
+                      "9535 BYN",                                      // Основная цена
+                      "10595 BYN",                                      // Старая цена
+                      "16.05.2025",                                    // Дата вылета
+                      "7",                                             // Количество ночей
+                      "23.05.2025",                                    // До какого числа
+                      "5",                                             // Количество звёзд
+                      "HB - Завтрак и ужин"                                  // Тип питания
+                    );
+                    addTourCard(
+                      "Sunrise Holidays",                            // Название отеля
+                      "page2 img/Sunrise Holidays.jpg",            // Путь к изображению 
+                      "Москва",
+                      "Египет",                                        // Страна
+                      "Хургада",                                 // Город
+                      "3918 BYN",                                      // Основная цена
+                      "4895 BYN",                                      // Старая цена
+                      "11.05.2025",                                    // Дата вылета
+                      "7",                                             // Количество ночей
+                      "18.05.2025",                                    // До какого числа
+                      "5",                                             // Количество звёзд
+                      "AI -  All Inclusive"                                  // Тип питания
+                    );
+                    addTourCard(
+                      "Akka Alinda Hotel",                            // Название отеля
+                      "page2 img/Akka Alinda Hotel.jpg",            // Путь к изображению 
+                      "Минск",
+                      "Турция",                                        // Страна
+                      "Кемер",                                 // Город
+                      "4631 BYN",                                      // Основная цена
+                      "5790 BYN",                                      // Старая цена
+                      "27.08.2025",                                    // Дата вылета
+                      "7",                                             // Количество ночей
+                      "03.09.2025",                                    // До какого числа
+                      "5",                                             // Количество звёзд
+                      "PREMIUM UAI",
+                      "http://127.0.0.1:5501/страница%20описания%20туров/Akka%20Alinda%20Hotel.xml?id=123"  // Уникальная ссылка
+                    );
+                    addTourCard(
+                      "Fujairah Rotana Resort & Spa",                            // Название отеля
+                      "page2 img/Fujairah Rotana Resort & Spa.jpg",            // Путь к изображению 
+                      "Минск",
+                      "ОАЭ",                                        // Страна
+                      "Фуджейра",                                 // Город
+                      "2716 BYN",                                      // Основная цена
+                      "3192 BYN",                                      // Старая цена
+                      "06.06.2025",                                    // Дата вылета
+                      "7",                                             // Количество ночей
+                      "13.06.2025",                                    // До какого числа
+                      "5",                                             // Количество звёзд
+                      "BB - Только завтраки"                                  // Тип питания
+                    );
+                    
+            
+                 // город вылета, страна/город назначения, дата вылета, ночей
+  function filterTours() {
+    const departureCityValue = document.getElementById("departure-city").value.trim().toLowerCase();
+    const destinationValue = document.getElementById("destination").value.trim().toLowerCase();
+    const dateValue = document.getElementById("date").value.trim();
+    const nightsValue = document.getElementById("nights").value.trim();
+
+    
+    const cardLinks = document.querySelectorAll(".tour-card-link");
+    let visibleCount = 0;
+
+    cardLinks.forEach(link => {
+      
+      const card = link.querySelector(".tour-card");
+      let match = true;
+
+      // Фильтр по городу вылета 
+      if (departureCityValue) {
+        if (!card.dataset.departureCity.includes(departureCityValue)) {
+          match = false;
+        }
+      }
+
+      // Фильтр по пункту назначения 
+      if (destinationValue) {
+        if (!(card.dataset.country.includes(destinationValue) || card.dataset.city.includes(destinationValue))) {
+          match = false;
+        }
+      }
+
+      // Фильтрация по дате вылета
+      if (dateValue) {
+        if (card.dataset.departureDate !== dateValue) {
+          match = false;
+        }
+      }
+
+      // Фильтрация по количеству ночей
+      if (nightsValue) {
+        if (card.dataset.nights !== nightsValue) {
+          match = false;
+        }
+      }
+
+      if (match) {
+        
+        link.style.display = "";
+        visibleCount++;
+      } else {
+        link.style.display = "none";
+      }
+    });
+
+    updateResultsCount(visibleCount);
+  }
+
+
+  const searchForm = document.querySelector(".search-form");
+  if (searchForm) {
+    searchForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      filterTours();
+    });
+  }
+
+  // Сортировка туров по цене
+  function sortTours() {
+    const grid = document.querySelector(".tour-grid");
+    
+    const cardLinks = Array.from(grid.querySelectorAll(".tour-card-link"));
+
+    // Сортовка по значению цены 
+    cardLinks.sort(function (a, b) {
+      const priceA = parseInt(a.querySelector(".tour-price").textContent.replace(/\D+/g, ""), 10);
+      const priceB = parseInt(b.querySelector(".tour-price").textContent.replace(/\D+/g, ""), 10);
+      return (sortOrder === "asc") ? priceA - priceB : priceB - priceA;
+    });
+
+    // Очистка контейнера 
+    grid.innerHTML = "";
+    cardLinks.forEach(link => grid.appendChild(link));
+  }
+
+  // Обработка клика по кнопке сортировки
+  const sortButton = document.querySelector(".sort-button");
+  if (sortButton) {
+    const sortText = sortButton.querySelector("span");
+    sortButton.addEventListener("click", function () {
+      
+      sortOrder = (sortOrder === "asc") ? "desc" : "asc";
+      sortText.textContent = (sortOrder === "asc") ? "Цена по возрастанию" : "Цена по убыванию";
+      sortTours();
+    });
+  }
+});
+
+              </script>
+  </body>
+</html>
