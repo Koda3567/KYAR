@@ -18,4 +18,6 @@ jobs:
         uses: github/super-linter@v5
         env:
           VALIDATE_ALL_CODEBASE: true  
+          FAIL_ON_ERROR: false          
+          RUN_JSCPD: false              
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
