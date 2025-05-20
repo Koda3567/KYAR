@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500&family=Manrope:wght@300;400;500;600&display=swap");
-
+/* Подключение шрифтов через @import */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500&family=Manrope:wght@300;400;500;600&display=swap");
+/* Переменные для шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500&family=Manrope:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500&family=Manrope:wght@300;400;500;600&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 :root {
   /* Семейства шрифтов */
@@ -420,7 +424,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 66px;
+  top: 50px;
   left: 3%;
 }
 .screen .logo-icon {
@@ -1598,4 +1602,53 @@ a {
   .screen .button-text {
     font-size: 15px;
   }
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 50%;
+  }
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.modal-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
