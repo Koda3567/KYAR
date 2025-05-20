@@ -1,47 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dream Path</title>
-    <link rel="stylesheet" href="css\scssstyle.css" />
-    
-
+    <!-- Исправлен слеш в пути -->
+    <link rel="stylesheet" href="css/scssstyle.css">
   </head>
   <body>
     <div class="screen">
       <div class="div">
         <div class="navigation-header">
           <div class="logo-header">
-            <img src="картинки\логотип.svg" alt="Dream Path Logo" class="logo-icon">
+            <!-- Исправлены пути и добавлен alt -->
+            <img src="картинки/логотип.svg" alt="Логотип Dream Path" class="logo-icon">
             <div class="site-name">Dream Path</div>
           </div>
          
           <div class="desktop-menu">
-            <div class="header-text-items"><a href="страница туров\second_page.html">Туры</a></div>
-            <div class="header-text-items"><a href="страница бронирования/page4.html">Бронирование</a></div>
-            <div class="header-text-items"><a href="страница контактов\page3.html">Контакты</a></div>
+            
+            <div class="header-text-items"><a href="страница_туров/second_page.html">Туры</a></div>
+            <div class="header-text-items"><a href="страница_бронирования/page4.html">Бронирование</a></div>
+            <div class="header-text-items"><a href="страница_контактов/page3.html">Контакты</a></div>
             <div class="header-text-items"><a href="main.html">Главная</a></div>
           </div>
-  
-         
+
           <div class="mobile-header">
-            
             <div class="mobile-hamburger-container">
               <div class="hamburger" onclick="toggleMenu()">☰</div>
               
               <div class="mobile-menu" id="mobileMenu">
-                <div class="header-text-items"><a href="страница туров\second_page.html">Туры</a></div>
-                <div class="header-text-items"><a href="страница бронирования/page4.html">Бронирование</a></div>
-                <div class="header-text-items"><a href="страница контактов\page3.html">Контакты</a></div>
+                
+                <div class="header-text-items"><a href="страница_туров/second_page.html">Туры</a></div>
+                <div class="header-text-items"><a href="страница_бронирования/page4.html">Бронирование</a></div>
+                <div class="header-text-items"><a href="страница_контактов/page3.html">Контакты</a></div>
                 <div class="header-text-items"><a href="main.html">Главная</a></div>
               </div>
             </div>
           </div>
-  
         </div>
-          
-        </div>
+
         <div class="open-the-world-area">
           <div class="page-title">
             <div class="open-the-world-title">Откройте мир с нами</div>
@@ -50,27 +48,31 @@
               Найдите свой идеальный маршрут прямо сейчас!
             </p>
           </div>
-          <a href="страница туров\second_page.html"><button class="button-2"><div class="button-text">Найти тур</div></button></a>
+          
+          <a href="страница_туров/second_page.html" class="button-2">
+            <div class="button-text">Найти тур</div>
+          </a>
         </div>
-        <div class="main-image"><img class="image" src="картинки\главная страница\main1.jpg" /></div>
+        </div>
+        <div class="main-image"><img class="image" src="картинки/главная_страница/main1.jpg"  alt="Главная страницы"/></div>
         <div class="best-offers-title">Лучшие предложения</div>
         <div class="best-offers-area">
           <div class="best-offers-card">
-            <div class="best-offers-card-image"><a href="страница туров\second_page.html"><img class="image-2" src="картинки\главная страница\hotels1.jpg" /></a></div>
+            <div class="best-offers-card-image"><a href="страница_туров/second_page.html"><img class="image-2" src="картинки/главная_страница/hotels1.jpg" alt="Рекомендуемые отели"/></a></div>
             <div class="best-offers-text">
               <div class="best-offers-card-name">Рекомендуемые отели</div>
               <p class="text-after-cards-name">Только лучшие варианты для вашего комфорта и отдыха.</p>
             </div>
           </div>
           <div class="best-offers-card">
-            <div class="best-offers-card-image"><a href="страница туров\second_page.html"><img class="image-2" src="картинки\главная страница\hot offers1.jpg" /></a></div>
+            <div class="best-offers-card-image"><a href="страница_туров/second_page.html"><img class="image-2" src="картинки/главная_страница/hot_offers1.jpg" alt="Горячие предложения"/></a></div>
             <div class="best-offers-text">
               <div class="best-offers-card-name">Горячие предложения</div>
               <p class="text-after-cards-name">Не упустите уникальные скидки и акции!</p>
             </div>
           </div>
           <div class="best-offers-card">
-            <div class="best-offers-card-image"><a href="страница туров\second_page.html"><img class="image-2" src="картинки\главная страница\bestsellers1.jpg" /></a></div>
+            <div class="best-offers-card-image"><a href="страница_туров/second_page.html"><img class="image-2" src="картинки/главная_страница/bestsellers1.jpg" alt="Хиты продаж"/></a></div>
             <div class="best-offers-text">
               <div class="best-offers-card-name">Хиты продаж</div>
               <p class="text-after-cards-name">Популярные маршруты, которые выбирают туристы.</p>
@@ -102,17 +104,19 @@
             </p>
           </div>
         </div>
-        <div class="plan-trip-button">
-          <button class="button-2"><a href="страница бронирования/page4.html"><div class="button-text">Планировать путешествие</div></a></button>
-        </div>
-        <div class="advantages-image"><img class="image-5" src="картинки\главная страница\Benefits1.jpg" /></div>
+       <div class="plan-trip-button">
+  <a href="страница_бронирования/page4.html" class="button-2">
+    <span class="button-text">Планировать путешествие</span>
+  </a>
+</div>
+        <div class="advantages-image"><img class="image-5" src="картинки/главная_страница/Benefits1.jpg" alt="advantages-image"/></div>
 
 
         <p class="moments-title">Моменты, которые остаются с вами</p>
         <div class="moments-cards">
           <div class="moments-card">
             
-              <div class="moments-image"><img class="image-6" src="картинки\главная страница\moments1.jpeg" /></div>
+              <div class="moments-image"><img class="image-6" src="картинки/главная_страница/moments1.jpeg" alt="Места, которые вдохновляют"/></div>
             
             <div class="moments-card-text-area">
               <div class="moments-card-text-title">Места, которые вдохновляют</div>
@@ -123,7 +127,7 @@
             </div>
           </div>
           <div class="moments-card">
-            <div class="moments-image"><img class="image-6" src="картинки\главная страница\moments2.jpg" /></div>
+            <div class="moments-image"><img class="image-6" src="картинки/главная_страница/moments2.jpg" alt="Лучшие моменты путешествий"/></div>
             <div class="moments-card-text-area">
               <div class="moments-card-text-title">Лучшие моменты путешествий</div>
               <p class="moments-card-text">
@@ -142,21 +146,21 @@
             <div class="customer-card"><div class="text-2">Всё продумано до мелочей</div></div>
           </div>
           <div class="avatar">
-            <img class="img" src="картинки\главная страница\avatar1.png" />
+            <img class="img" src="картинки/главная_страница/avatar1.png" alt="avatar-1"/>
             <div class="frame">
               <div class="avatar-name">Name</div>
               <div class="avatar-description">Description</div>
             </div>
           </div>
           <div class="avatar-2">
-            <img class="img" src="картинки\главная страница\avatar2.png" />
+            <img class="img" src="картинки/главная_страница/avatar2.png" alt="avatar-2"/>
             <div class="frame">
               <div class="avatar-name">Name</div>
               <div class="avatar-description">Description</div>
             </div>
           </div>
           <div class="avatar-3">
-            <img class="img" src="картинки\главная страница\avatar3.png" />
+            <img class="img" src="картинки/главная_страница/avatar3.png" alt="avatar-3" />
             <div class="frame">
               <div class="avatar-name">Name</div>
               <div class="avatar-description">Description</div>
@@ -169,8 +173,12 @@
         
         <div class="ready-to-travel-area">
           <div class="buttons-2">
-            <button class="button-3"><a href="страница бронирования/page4.html"><div class="button-text">Забронировать сейчас</div></a></button>
-            <button class="button-4"><a href="ссылки/Полезная информация_ Советы туристам в дорогу.html"><div class="button-text-2">Узнать больше</div></a></button>
+            <a href="страница_бронирования/page4.html" class="button-3">
+  <span class="button-text">Забронировать сейчас</span>
+</a>
+<a href="javascript:void(0)" class="button-4" data-modal="info">
+  <span class="button-text-2">Узнать больше</span>
+</a>
           </div>
           <p class="ready-to-travel-title">Готовы к путешествию вашей мечты?</p>
         </div>
@@ -179,14 +187,14 @@
           <div class="items-2">
             <div class="items-name-text">Навигация</div>
             <div class="items-text"><a href="main.html">Главная</a></div>
-            <div class="items-text"><a href="страница бронирования/page4.html">Бронирование</a></div>
-            <div class="items-text"><a href="страница туров/second_page.html">Туры</a></div>
+            <div class="items-text"><a href="страница_бронирования/page4.html">Бронирование</a></div>
+            <div class="items-text"><a href="страница_туров/second_page.html">Туры</a></div>
             
           </div>
           <div class="items-3">
             <div class="items-name-text">Поддержка</div>
-            <div class="items-text"><a href="страница контактов/page3.html">Контакты</a></div>
-            <div class="items-text"><a href="ссылки/Политика конфиденциальности.html">Условия и политика конфиденциальности</a></div>
+            <div class="items-text"><a href="страница_контактов/page3.html">Контакты</a></div>
+            <div class="items-text"><a href="javascript:void(0)" data-modal="terms">Условия и политика конфиденциальности</a></div>
             
             
           </div>
@@ -199,21 +207,21 @@
           <div class="footer-page-name">Dream Path</div>
           <div class="social-icons">
             <div class="buttons-icon">
-              <div class="icon"><img class="icon-2" src="картинки\главная страница\Telegram.svg" /></div>
+              <div class="icon"><img class="icon-2" src="картинки/главная_страница/Telegram.svg" alt="Tg"/></div>
             </div>
             <div class="buttons-icon">
-              <div class="icon"><img class="icon-2" src="картинки\главная страница\Instagram.svg" /></div>
+              <div class="icon"><img class="icon-2" src="картинки/главная_страница/Instagram.svg" alt="Inst"/></div>
             </div>
             <div class="buttons-icon">
-              <div class="icon"><img class="icon-2" src="картинки\главная страница\VK.svg" /></div>
+              <div class="icon"><img class="icon-2" src="картинки/главная_страница/VK.svg" alt="Vk"/></div>
             </div>
             <div class="buttons-icon">
-              <div class="icon"><img class="icon-2" src="картинки\главная страница\Facebook.svg" /></div>
+              <div class="icon"><img class="icon-2" src="картинки/главная_страница/Facebook.svg" alt="Fb"/></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+   
     <script>
       // Функция переключения видимости мобильного меню
       function toggleMenu() {
@@ -221,5 +229,126 @@
         mobileMenu.style.display = mobileMenu.style.display === "flex" ? "none" : "flex";
       }
     </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   
+    const buttonsTwo = document.querySelectorAll(".button-2");
+    buttonsTwo.forEach(function(btn) {
+      const defaultColor = window.getComputedStyle(btn).backgroundColor;
+      const hoverColor = "#008080"; 
+      
+      btn.addEventListener("mouseenter", function() {
+        btn.style.backgroundColor = hoverColor;
+      });
+      btn.addEventListener("mouseleave", function() {
+        btn.style.backgroundColor = defaultColor;
+      });
+    });
+    
+   
+    const button3 = document.querySelector(".button-3");
+    if (button3) {
+      const defaultColor3 = window.getComputedStyle(button3).backgroundColor;
+      const hoverColor3 = "#008080"; 
+      
+      button3.addEventListener("mouseenter", function() {
+        button3.style.backgroundColor = hoverColor3;
+      });
+      button3.addEventListener("mouseleave", function() {
+        button3.style.backgroundColor = defaultColor3;
+      });
+    }
+    
+   
+    const button4 = document.querySelector(".button-4");
+    if (button4) {
+      const defaultColor4 = window.getComputedStyle(button4).backgroundColor;
+      const hoverColor4 = "#6495ED"; 
+      
+      button4.addEventListener("mouseenter", function() {
+        button4.style.backgroundColor = hoverColor4;
+      });
+      button4.addEventListener("mouseleave", function() {
+        button4.style.backgroundColor = defaultColor4;
+      });
+    }
+  });
+</script>
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close">&times;</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+<script>
+// Модальное окно
+document.addEventListener("DOMContentLoaded", function() {
+  const modalContents = {
+    terms: `
+      <h2>Политика конфиденциальности</h2>
+      <p>Политика конфиденциальности данного сайта туристического агентства направлена на информирование пользователей о порядке сбора, обработки и защиты их персональных данных. Мы собираем информацию, предоставляемую посетителями при оформлении бронирования и используем её исключительно для улучшения качества услуг и информирования о специальных предложениях. Все полученные данные обрабатываются в строгом соответствии с действующим законодательством о защите персональной информации и не передаются третьим лицам без явного согласия пользователя, кроме случаев, предусмотренных законом. Приняты необходимые технические и организационные меры для обеспечения безопасности информации и предотвращения несанкционированного доступа к ней. Используя наш сайт, вы автоматически соглашаетесь с настоящей политикой конфиденциальности и можете связаться с нами по указанным контактным данным для получения дополнительной информации или выражения своих замечаний.</p>
+      
+    `,
+    info: `
+      <h2>Советы путешественникам</h2>
+
+<p><strong>1. Подготовка документов</strong></p>
+<p>Перед поездкой убедитесь, что у вас есть все необходимые документы: действующий загранпаспорт, визы или разрешения, а также подтверждения бронирования и билетов. Рекомендуется сделать копии документов и хранить их отдельно для дополнительной безопасности.</p>
+
+<p><strong>2. Страхование</strong></p>
+<p>Оформление туристической страховки поможет защититься от непредвиденных расходов в случае болезни, аварии или потери багажа. Надежное страхование обеспечивает уверенность и спокойствие во время путешествия.</p>
+
+    `
+  };
+
+  // Элементы модального окна
+  const modalOverlay = document.getElementById('modalOverlay');
+  const modalContent = document.getElementById('modalContent');
+  const modalCloseBtn = document.querySelector('.modal-close');
+
+  // Функции управления
+  function openModal(content) {
+    if(modalOverlay && modalContent) {
+      modalContent.innerHTML = content;
+      modalOverlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    if(modalOverlay) {
+      modalOverlay.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  }
+
+  // Обработчики событий
+  if(modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', closeModal);
+  }
+
+  if(modalOverlay) {
+    modalOverlay.addEventListener('click', function(e) {
+      if(e.target === modalOverlay) closeModal();
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if(e.key === 'Escape') closeModal();
+  });
+
+  // Обработчики для кнопок
+  document.querySelectorAll('[data-modal]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const modalType = this.dataset.modal;
+      if(modalContents[modalType]) {
+        openModal(modalContents[modalType]);
+      }
+    });
+  });
+});
+</script>
+
   </body>
 </html>
