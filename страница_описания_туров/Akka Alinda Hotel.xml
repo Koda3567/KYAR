@@ -5,19 +5,19 @@
     <title>Dream Path - Akka Alinda Hotel</title>
   </meta>
   <header>
-    <logo>page4 img/логотип.svg</logo>
+    <logo>page5img/логотип.svg</logo>
     <siteName>Dream Path</siteName>
     <desktopMenu>
-      <item link="/страница туров\second_page.html">Туры</item>
-      <item link="/страница бронирования\page4.html">Бронирование</item>
-      <item link="/страница контактов\page3.html">Контакты</item>
-      <item link="/main.html">Главная</item>
+      <item link="../страница_туров/second_page.html">Туры</item>
+      <item link="../страница_бронирования/page4.html">Бронирование</item>
+      <item link="../страница_контактов/page3.html">Контакты</item>
+      <item link="../main.html">Главная</item>
     </desktopMenu>
     <mobileMenu>
-      <item link="/страница туров\second_page.html">Туры</item>
-      <item link="/страница бронирования\page4.html">Бронирование</item>
-      <item link="/страница контактов\page3.html">Контакты</item>
-      <item link="/main.html">Главная</item>
+      <item link="../страница_туров/second_page.html">Туры</item>
+      <item link="../страница_бронирования/page4.html">Бронирование</item>
+      <item link="../страница_контактов/page3.html">Контакты</item>
+      <item link="../main.html">Главная</item>
     </mobileMenu>
   </header>
   <hotelInfo>
@@ -25,15 +25,15 @@
     <rating>5</rating>
     <location>Турция, Кемер, Кириш</location>
     <gallery>
-      <mainImage>page4 img/Akka Alinda Hotel/0.jpg</mainImage>
+      <mainImage>page5img/Akka_Alinda_Hotel/0.jpg</mainImage>
       <thumbnails>
-        <thumbnail>page4 img/Akka Alinda Hotel/0.jpg</thumbnail>
-        <thumbnail>page4 img/Akka Alinda Hotel/1.jpg</thumbnail>
-        <thumbnail>page4 img/Akka Alinda Hotel/2.jpg</thumbnail>
-        <thumbnail>page4 img/Akka Alinda Hotel/3.jpg</thumbnail>
-        <thumbnail>page4 img/Akka Alinda Hotel/4.jpg</thumbnail>
-        <thumbnail>page4 img/Akka Alinda Hotel/5.jpg</thumbnail>
-        <thumbnail>page4 img/Akka Alinda Hotel/6.jpg</thumbnail>
+        <thumbnail>page5img/Akka_Alinda_Hotel/0.jpg</thumbnail>
+        <thumbnail>page5img/Akka_Alinda_Hotel/1.jpg</thumbnail>
+        <thumbnail>page5img/Akka_Alinda_Hotel/2.jpg</thumbnail>
+        <thumbnail>page5img/Akka_Alinda_Hotel/3.jpg</thumbnail>
+        <thumbnail>page5img/Akka_Alinda_Hotel/4.jpg</thumbnail>
+        <thumbnail>page5img/Akka_Alinda_Hotel/5.jpg</thumbnail>
+        <thumbnail>page5img/Akka_Alinda_Hotel/6.jpg</thumbnail>
         
       </thumbnails>
     </gallery>
@@ -101,15 +101,16 @@ Annex:
     <navigation>
       <column id="nav">
         <title>Навигация</title>
-        <item link="/main.html"> Главная</item>
-        <item link="/страница бронирования\page4.html">Бронирование</item>
-        <item link="/страница туров\second_page.html">Туры</item>
+        <item link="../main.html"> Главная</item>
+        <item link="../страница_бронирования/page4.html">Бронирование</item>
+        <item link="../страница_туров/second_page.html">Туры</item>
         
       </column>
       <column id="support">
         <title>Поддержка</title>
-        <item link="/ссылки\Политика конфиденциальности.html">Условия и политика конфиденциальности</item>
-        <item link="/страница контактов\page3.html">Контакты</item>
+        <item link="">Часто задаваемые вопросы</item>
+        <item link="">Условия и политика конфиденциальности</item>
+        <item link="../страница_контактов/page3.html">Контакты</item>
       </column>
       <column id="links">
         <title>Полезные ссылки</title>
@@ -120,10 +121,10 @@ Annex:
     </navigation>
     <siteName>Dream Path</siteName>
     <socialIcons>
-      <icon>page4 img/Telegram.svg</icon>
-      <icon>page4 img/Instagram.svg</icon>
-      <icon>page4 img/VK.svg</icon>
-      <icon>page4 img/Facebook.svg</icon>
+      <icon>page5img/Telegram.svg</icon>
+      <icon>page5img/Instagram.svg</icon>
+      <icon>page5img/VK.svg</icon>
+      <icon>page5img/Facebook.svg</icon>
     </socialIcons>
   </footer>
   

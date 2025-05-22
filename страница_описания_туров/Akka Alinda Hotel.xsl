@@ -78,19 +78,19 @@
                   </h2>
                   <div class="rating">
                     <xsl:if test="hotelInfo/rating &gt;= 1">
-                      <img src="page4 img/star.svg" alt="Star rating" class="star"/>
+                      <img src="page5img/star.svg" alt="Star rating" class="star"/>
                     </xsl:if>
                     <xsl:if test="hotelInfo/rating &gt;= 2">
-                      <img src="page4 img/star.svg" alt="Star rating" class="star"/>
+                      <img src="page5img/star.svg" alt="Star rating" class="star"/>
                     </xsl:if>
                     <xsl:if test="hotelInfo/rating &gt;= 3">
-                      <img src="page4 img/star.svg" alt="Star rating" class="star"/>
+                      <img src="page5img/star.svg" alt="Star rating" class="star"/>
                     </xsl:if>
                     <xsl:if test="hotelInfo/rating &gt;= 4">
-                      <img src="page4 img/star.svg" alt="Star rating" class="star"/>
+                      <img src="page5img/star.svg" alt="Star rating" class="star"/>
                     </xsl:if>
                     <xsl:if test="hotelInfo/rating = 5">
-                      <img src="page4 img/star.svg" alt="Star rating" class="star"/>
+                      <img src="page5img/star.svg" alt="Star rating" class="star"/>
                     </xsl:if>
                   </div>
                   <p class="location">
