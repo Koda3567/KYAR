@@ -264,6 +264,9 @@ a {
   white-space: nowrap;
   font-style: var(--small-text-font-style);
 }
+.first-name{
+  top: -20px;
+}
 .screen .avatar {
   width: 26%;
   -webkit-box-align: end;
@@ -1651,4 +1654,23 @@ a {
 .modal-content p {
   margin-bottom: 15px;
   line-height: 1.6;
+}
+  @media (min-width: 765px) and (max-width: 900px) {
+    .screen .text-2{
+      line-height: 26px;
+    }
+  }
+  
+  .button-2, 
+.button-3, 
+.button-4, 
+.button-text, 
+.button-text-2 {
+    cursor: pointer;
+    user-select: none; 
+}
+
+
+a[class*="button-"] {
+    cursor: pointer;
 }

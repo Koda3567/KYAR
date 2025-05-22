@@ -132,7 +132,7 @@
         <h2 class="section-title">Доступные отели</h2>
         <!-- Кнопка сортировки -->
         <div class="sort-bar">
-          <button id="sort-button" data-order="asc">Сортировать по цене по возрастанию</button>
+          <button id="sort-button" data-order="asc" class="buttons">Сортировать по цене по возрастанию</button>
         </div>
         <!-- Пример карточки отеля с data-атрибутами для фильтрации -->
         <article class="hotel-card" data-price="4419" data-stars="5" data-nutrition="ultra_all_inclusive"  data-coastline="1" data-distance="5" data-beachtype="sand" data-beachview="private">
@@ -153,14 +153,14 @@
               <span class="star-icon"><img src="page4img/star.svg" alt="звезда"></span>
             </div>
             <p class="hotel-price">4419 BYN</p>
-            <a href="#" class="btn-details">Подробнее</a>
+            <a href="../страница_описания_туров/AZURA_DELUXE_RESORT_&_SPA.html" class="btn-details">Подробнее</a>
           </div>
         </article>
-        <!-- Дополнительная карточка -->
+
         <article class="hotel-card" data-price="6962" data-stars="4" data-nutrition="all_inclusive"  data-coastline="3" data-beachtype="sand" data-beachview="private" data-distance="15">
           <figure class="hotel-gallery">
             <img src="page4img/Pickalbatros_Aqua_Blu_Resort_Hrg.jpg" alt="Фотография отеля" class="hotel-image">
-            <figcaption>Фотография отеля</figcaption>
+           
           </figure>
           <div class="hotel-info">
             <h3 class="hotel-title">Pickalbatros Aqua Blu Resort Hrg</h3>
@@ -174,7 +174,7 @@
               <span class="star-icon"><img src="page4img/star.svg" alt="звезда"></span>
             </div>
             <p class="hotel-price">6962 BYN</p>
-            <a href="#" class="btn-details">Подробнее</a>
+            <a href="../страница_описания_туров/Pickalbatros_Aqua_Blu_Resort_Hrg.html" class="btn-details">Подробнее</a>
           </div>
         </article>
 
@@ -197,7 +197,7 @@
               <span class="star-icon"><img src="page4img/star.svg" alt="звезда"></span>
             </div>
             <p class="hotel-price">10 001 BYN</p>
-            <a href="#" class="btn-details">Подробнее</a>
+            <a href="../страница_описания_туров/MAYIA_EXCLUSIVE_RESORT_&_SPA_5.html" class="btn-details">Подробнее</a>
           </div>
         </article>
       </section>
@@ -213,8 +213,10 @@
       </div>
       <div class="items-3">
         <div class="items-name-text">Поддержка</div>
+        <div class="items-text"><a href="javascript:void(0)" data-modal="questions">Часто задаваемые вопросы</a></div>
+         <div class="items-text"><a href="javascript:void(0)" data-modal="terms">Условия и политика конфиденциальности</a></div>
         <div class="items-text"><a href="../страница_контактов/page3.html">Контакты</a></div>
-        <div class="items-text"><a href="/ссылки/Политика_конфиденциальности.html">Условия и политика конфиденциальности</a></div>
+       
       </div>
       <div class="items-4">
         <div class="items-name-text">Полезные ссылки</div>
@@ -356,6 +358,88 @@
         });
       });
       </script>
+      <div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close">&times;</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+<script>
+// Модальное окно
+document.addEventListener("DOMContentLoaded", function() {
+  const modalContents = {
+    terms: `
+      <h2>Политика конфиденциальности</h2>
+      <p>Политика конфиденциальности данного сайта туристического агентства направлена на информирование пользователей о порядке сбора, обработки и защиты их персональных данных. Мы собираем информацию, предоставляемую посетителями при оформлении бронирования и используем её исключительно для улучшения качества услуг и информирования о специальных предложениях. Все полученные данные обрабатываются в строгом соответствии с действующим законодательством о защите персональной информации и не передаются третьим лицам без явного согласия пользователя, кроме случаев, предусмотренных законом. Приняты необходимые технические и организационные меры для обеспечения безопасности информации и предотвращения несанкционированного доступа к ней. Используя наш сайт, вы автоматически соглашаетесь с настоящей политикой конфиденциальности и можете связаться с нами по указанным контактным данным для получения дополнительной информации или выражения своих замечаний.</p>
       
+     `,
+    questions: `
+      <h2>Часто задаваемые вопросы</h2>
+
+<p><strong>Что посоветуете: всё включено или ультра?</strong></p>
+<p>В данном случае всё зависит от конкретного отеля, но в общем, система «всё включено» (также обозначается как All inclusive) даёт возможность питаться в ресторане на территории отеля без оплаты, также можно бесплатно брать напитки и алкоголь. Кроме того, понятие «всё включено» относится к SPA-услугам, правом пользования тренажёрным залом, детским клубом на территории отеля и прочим позициям, список которых может меняться, в зависимости от концепции отеля.
+<br>
+Коктейли в барах на пляже и прочие дополнительные позиции в меню оплачиваются отдельно. Если же напротив типа питания в отеле появляется приставка «ультра», это, как правило, означает включение в бесплатный список всех напитков, в том числе, и иностранных.</p>
+
+<p><strong>Что такое топливный сбор?</strong></p>
+<p>Топливный сбор – это определенная по величине сумма, которую компания туроператор или авиаперевозчик включает в стоимость билета. Некоторые фирмы указывают его отдельной строкой, как например налог на добавленную стоимость, некоторые камуфлируют в общей стоимости авиабилета. В последнем случае узнать величину топливного сбора можно в туристическом агентстве, при выяснении окончательной стоимости авиаперелета, или на сайте компании авиаперевозчика.
+
+Цены на горючее для самолетов постоянно меняются - и в последнее десятилетие не отмечалось, чтобы их колебание происходило в сторону уменьшения. Топливный сбор предназначен для компенсации разницы стоимости авиаперелета в случае изменения (увеличения) цены на топливо для самолета.</p>
+<p><strong>Какой срок действия должен быть у паспорта для выезда за границу?</strong></p>
+<p>Срок службы паспорта учитывается при оформлении визы, так для въезда встраны Евросоюза паспорт должен быть нестарше 10 лет намомент выезда и обязательное наличие как минимум 2 чистые страницы.
+Также многие консульские учреждения для открытия визы требуют, чтобы намомент въезда доокончания срока действия паспорта оставалось неменее 3–6месяцев, авнекоторых случаях— неменее 1 года. Поэтому, перед планированием посещения дипломатического учреждения или консульского представительства предполагаемой страны въезда рекомендуется уточнить требования ксрокам действия паспорта.</p>
+
+    `
+
+  };
+
+  // Элементы модального окна
+  const modalOverlay = document.getElementById('modalOverlay');
+  const modalContent = document.getElementById('modalContent');
+  const modalCloseBtn = document.querySelector('.modal-close');
+
+  // Функции управления
+  function openModal(content) {
+    if(modalOverlay && modalContent) {
+      modalContent.innerHTML = content;
+      modalOverlay.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal() {
+    if(modalOverlay) {
+      modalOverlay.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  }
+
+  // Обработчики событий
+  if(modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', closeModal);
+  }
+
+  if(modalOverlay) {
+    modalOverlay.addEventListener('click', function(e) {
+      if(e.target === modalOverlay) closeModal();
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if(e.key === 'Escape') closeModal();
+  });
+
+  // Обработчики для кнопок
+  document.querySelectorAll('[data-modal]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const modalType = this.dataset.modal;
+      if(modalContents[modalType]) {
+        openModal(modalContents[modalType]);
+      }
+    });
+  });
+});
+</script>
   </body>
 </html>
